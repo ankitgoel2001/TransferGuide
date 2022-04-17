@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel = "stylesheet" type = "text/css" href = "/css/style.css" >
+    <title>Document</title>
+    
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <div class = "container">
+        <center>
+        <div class="card mb-4" style="width: 80rem; height: 50rem;">
+            <img src="..." class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Transfer help from De Anza to UC Davis (Computer Science)</h5>
+              <div class="card-content">
+              <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; height: 700px;" >
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                  <span class="fs-4">Sidebar</span>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                  <li class="nav-item" onclick="showRightElement('re1')">
+                    <div class="nav-link active" aria-current="page">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                      Transfer Requirements
+                    </div>
+                  </li>
+                  <li class="nav-item" onclick="showRightElement('re2')">
+                    <div class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#"></use></svg>
+                      Relevant Coursework
+                    </div>
+                  </li>
+                  <li class="nav-item" onclick="showRightElement('re3')">
+                    <div class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+                      Connect with others
+                    </div>
+                  </li>
+                  <li class="nav-item" onclick="showRightElement('re4')">
+                    <div class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+                      Organizations
+                    </div>
+                  </li>
+                  <li class="nav-item" onclick="showRightElement('re5')">
+                    <div class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                      Financial Aid
+                    </div>
+                  </li>
+                </ul>
+                <hr>
+              </div>
+            
+            <div class="rightElement">
+                <div id="re1">
+                  <h5>Major: Computer Science</h5>
+                  <br>
+                  <br>
+                 
+                  <div class = "mt-4" style = "text-align: justify;">
+                    Overall UC-transferable coursework must meet a minimum 3.10 GPA.
+                    <br>
+                    <ul>
+                      Complete the following courses and maintain a 3.40 GPA in each of the following two series:
+                      <li>Mathematics 21A/B/C</li>
+                      <li>Engineering Computer Science 20, 50, 36A/C</li>
+                      <li> Additional Recommendations:</li>
+                    </ul>
+                    
+                    
+                    Engineering Computer Science 36B
+Effective for Fall 2022 Applicants: <em>All majors except Computer Science in the College of Letters and Science are open to TAG. All students interested in applying to the Computer Science major may still submit the transfer UC application in November.</em>
+                  
+                 <br><br> <a href = "https://www.ucdavis.edu/admissions/transfer/major-requirements-college-letters-sciences#compsci">UC Davis Website</a>
+                  <br><a href = "https://assist.org/transfer/results?year=72&institution=113&agreement=89&agreementType=to&view=agreement&viewBy=major&viewByKey=25627061">Course articulation Info</a>
+                <br><br>
+                <h3>Transfer Statistics of 2021</h3>
+                <ul>
+                  <li>Applicants: 1,458</li>
+                  <li>Admits: 415</li>
+                  <li>Enrolls: 162</li>
+                  <li>Admit GPA Range: 3.79 - 3.97</li>
+                  <li>Enrolled GPA Range: 3.73 - 3.92</li>
+                  <li>Admit Rate: 28%</li>
+                  <li>Yield Rate: 39%</li>
+                </ul>
+                   
+
+                </div>
+
+
+
+                </div>
+                <div id="re2">
+                      <h3 class = "mb-4">Relevant Coursework</h3>
+                      <a href = "./collegeApp/new" class = "btn">New post</a>
+
+                      <div class = "scroller">
+                        <% resources.forEach(resource => { %>
+                          <div class = "card mt-4">
+                            <div class = "card-body">
+                              <h4 class = "card-title"><%= resource.title %></h4>
+                              <div class = "card-subtitle text-muted mb-2"><%= resource.createdAt.toLocaleDateString() %></div>
+                              <div class = "card-text mb-2"><%= resource.description %></div>
+                            </div>
+                          </div>
+                        <% }) %>
+                      </div>
+                </div>
+                <div id="re3">
+                  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+                  <div class="container">
+                  <div class="row clearfix">
+                      <div class="col-lg-12">
+                          <div class="card chat-app">
+                              <div id="plist" class="people-list">
+                                  <div class="input-group">
+                                      <div class="input-group-prepend">
+                                          <span class="input-group-text"><i class="fa fa-search"></i></span>
+                                      </div>
+                                      <input type="text" class="form-control" placeholder="Search...">
+                                  </div>
+                                  <ul class="list-unstyled chat-list mt-2 mb-0">
+                                      <li class="clearfix">
+                                          <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="avatar">
+                                          <div class="about">
+                                              <div class="name">Vincent Porter</div>
+                                              <div class="status"> <i class="fa fa-circle offline"></i> left 7 mins ago </div>                                            
+                                          </div>
+                                      </li>
+                                      <li class="clearfix active">
+                                          <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="avatar">
+                                          <div class="about">
+                                              <div class="name">Aiden Chavez</div>
+                                              <div class="status"> <i class="fa fa-circle online"></i> online </div>
+                                          </div>
+                                      </li>
+                                      <li class="clearfix">
+                                          <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="avatar">
+                                          <div class="about">
+                                              <div class="name">Mike Thomas</div>
+                                              <div class="status"> <i class="fa fa-circle online"></i> online </div>
+                                          </div>
+                                      </li>                                    
+                                      <li class="clearfix">
+                                          <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="avatar">
+                                          <div class="about">
+                                              <div class="name">Christian Kelly</div>
+                                              <div class="status"> <i class="fa fa-circle offline"></i> left 10 hours ago </div>
+                                          </div>
+                                      </li>
+                                      <li class="clearfix">
+                                          <img src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="avatar">
+                                          <div class="about">
+                                              <div class="name">Monica Ward</div>
+                                              <div class="status"> <i class="fa fa-circle online"></i> online </div>
+                                          </div>
+                                      </li>
+                                      <li class="clearfix">
+                                          <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="avatar">
+                                          <div class="about">
+                                              <div class="name">Dean Henry</div>
+                                              <div class="status"> <i class="fa fa-circle offline"></i> offline since Oct 28 </div>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="chat">
+                                  <div class="chat-header clearfix">
+                                      <div class="row">
+                                          <div class="col-lg-6">
+                                              <a href="javascript:void(0);" data-toggle="modal" data-target="#view_info">
+                                                  <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="avatar">
+                                              </a>
+                                              <div class="chat-about">
+                                                  <h6 class="m-b-0">Aiden Chavez</h6>
+                                                  <small>Last seen: 2 hours ago</small>
+                                              </div>
+                                          </div>
+                                          <div class="col-lg-6 hidden-sm text-right">
+                                              <a href="javascript:void(0);" class="btn btn-outline-secondary"><i class="fa fa-camera"></i></a>
+                                              <a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-image"></i></a>
+                                              <a href="javascript:void(0);" class="btn btn-outline-info"><i class="fa fa-cogs"></i></a>
+                                              <a href="javascript:void(0);" class="btn btn-outline-warning"><i class="fa fa-question"></i></a>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="chat-history">
+                                      <ul class="m-b-0">
+                                          <li class="clearfix">
+                                              <div class="message-data text-right">
+                                                  <span class="message-data-time">10:10 AM, Today</span>
+                                                  <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="avatar">
+                                              </div>
+                                              <div class="message other-message float-right"> Hi Aiden, how are you? How is the project coming along? </div>
+                                          </li>
+                                          <li class="clearfix">
+                                              <div class="message-data">
+                                                  <span class="message-data-time">10:12 AM, Today</span>
+                                              </div>
+                                              <div class="message my-message">Are we meeting today?</div>                                    
+                                          </li>                               
+                                          <li class="clearfix">
+                                              <div class="message-data">
+                                                  <span class="message-data-time">10:15 AM, Today</span>
+                                              </div>
+                                              <div class="message my-message">Project has been already finished and I have results to show you.</div>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <form action = "collegeApp/sendMessage" method = "POST">
+                                  <div class="chat-message clearfix">
+                                      <div class="input-group mb-0">
+                                          <div class="input-group-prepend">
+                                              <span class="input-group-text">
+                                               
+                                                  <button type = "submit" class ="btn btn-primary mt-4"><i class="fa fa-send"></i></span>
+                                                  </button>
+                                  
+
+                                                
+                                          </div>
+                                          <input name = "message" type="text" class="form-control" placeholder="Enter text here...">                                    
+                                      </div>
+                                  </div>
+                                </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+                <div id="re4">
+                  <h3 class = "mb-4">Clubs & Organizations</h3>
+                  <a>Contribute!</a>
+
+                  <div class = "scroller">
+                      <div class = "card mt-4">
+                        <div class = "card-body">
+                          <h4 class = "card-title">AvenueE</h4>
+                          <div class = "card-subtitle text-muted mb-2">4/17/2022</div>
+                          <div class = "card-text mb-2">AvenueE is a club directed for engineering transfer students to have a smooth transfer from community college to UC Davis. They will connect you with resources such as networking, resume review, job search, research and internship oppurtunities, mental health, etc.
+                            <a href = "https://avenuee.engineering.ucdavis.edu/">Website</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class = "card mt-4">
+                        <div class = "card-body">
+                          <h4 class = "card-title">Transfer Research Society</h4>
+                          <div class = "card-subtitle text-muted mb-2">4/17/2022</div>
+                          <div class = "card-text mb-2">Discord community directed to help community colleges with FAQ's and mentorship connection with Aggie Resources
+                          </div>
+                        </div>
+                      </div>
+                      <div class = "card mt-4">
+                        <div class = "card-body">
+                          <h4 class = "card-title">Green Community</h4>
+                          <div class = "card-subtitle text-muted mb-2">4/17/2022</div>
+                          <div class = "card-text mb-2">Join the green community discord to learn more about campus housing for transfers!
+                            <a href = "https://discord.gg/SAPaTrAS">Discord</a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div id="re5">
+                  <div class = "scroller">
+                    <div class = "card mt-4">
+                      <div class = "card-body">
+                        <h4 class = "card-title">AvenueE</h4>
+                        <div class = "card-subtitle text-muted mb-2">4/17/2022</div>
+                        <div class = "card-text mb-2">AvenueE is a club directed for engineering transfer students to have a smooth transfer from community college to UC Davis. They will connect you with resources such as networking, resume review, job search, research and internship oppurtunities, mental health, etc.
+                          <a href = "https://avenuee.engineering.ucdavis.edu/">Website</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class = "card mt-4">
+                      <div class = "card-body">
+                        <h4 class = "card-title">STEP</h4>
+                        <div class = "card-subtitle text-muted mb-2">4/17/2022</div>
+                        <div class = "card-text mb-2">STEP is a two-year program that begins with a six-week summer residential program. STEP offers participants six units of college credit, academic advising, skill development opportunities, and an orientation to the campus.
+                          <a href = "https://financialaid.ucdavis.edu/undergraduate/summer/new">More Info</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                    
+                </div>
+
+            </div>
+          </div>
+            </div>
+        </center>
+    </div>
+    
+    <script>
+      showRightElement("re1");
+
+        function showRightElement(navString) {
+            console.log(navString);
+            document.getElementById("re1").style = "display: none";
+            document.getElementById("re2").style = "display: none";
+            document.getElementById("re3").style = "display: none";
+            document.getElementById("re4").style = "display: none";
+            document.getElementById("re5").style = "display: none";
+            document.getElementById(navString).style = "display: block";
+        }
+    </script>
+    </body>
+    
+</html>
